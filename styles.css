@@ -78,3 +78,64 @@ h1{font-size:clamp(43px,4.65vw,76px);line-height:.98;letter-spacing:-.055em;marg
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* First-shoot offer */
+.first-shoot-section{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);
+  align-items:center;
+  gap:32px;
+  background:linear-gradient(115deg,#11130f,#20261e);
+  color:#fff;
+  overflow:hidden;
+}
+.first-shoot-section .kicker{color:#9edb91}
+.first-shoot-copy h2{
+  margin:8px 0 12px;
+  font-size:clamp(34px,3.4vw,52px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+.first-shoot-copy p{
+  max-width:820px;
+  margin:0;
+  color:rgba(255,255,255,.76);
+  font-size:17px;
+  line-height:1.6;
+}
+.first-shoot-copy strong{color:#fff}
+.first-shoot-price{
+  min-height:190px;
+  padding:28px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:22px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+.first-shoot-price span{
+  color:#9edb91;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.first-shoot-price b{
+  margin:8px 0 5px;
+  font-size:clamp(38px,4vw,58px);
+  line-height:1;
+  letter-spacing:-.055em;
+}
+.first-shoot-price small{color:rgba(255,255,255,.66);font-size:12px}
+
+@media(max-width:860px){
+  .first-shoot-section{grid-template-columns:1fr}
+  .first-shoot-price{min-height:0}
+}
+@media(max-width:640px){
+  .first-shoot-copy h2{font-size:31px}
+  .first-shoot-copy p{font-size:15px}
+  .first-shoot-price{padding:22px}
+}
