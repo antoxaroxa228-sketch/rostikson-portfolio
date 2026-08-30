@@ -139,3 +139,11 @@ h1{font-size:clamp(43px,4.65vw,76px);line-height:.98;letter-spacing:-.055em;marg
   .first-shoot-copy p{font-size:15px}
   .first-shoot-price{padding:22px}
 }
+.site-footer a{
+  color:var(--ink);
+  font-weight:750;
+}
+.site-footer a:hover{color:var(--green)}
+@media(max-width:640px){
+  .site-footer a{width:max-content}
+}
